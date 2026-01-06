@@ -100,7 +100,7 @@ const Calendar: React.FC = () => {
             className="bg-zinc-700 col-span-11 hover:bg-zinc-800 text-white px-2 py-1"
             onClick={() => {
               setIsEditing(true)
-              setEditingEventId(overlappingEvent.id)
+              setEditingEventId((overlappingEvent as EVENT).id)
               setCurrentEvent(overlappingEvent as CURRENT_EVENT)
             }}
           >
